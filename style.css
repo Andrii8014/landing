@@ -4,6 +4,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  color: #292929;
 }
 section {
   height: 800px;
@@ -24,20 +25,30 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.heder-title {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-size: 48px;
+  line-height: 100%;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   transform: translateX(-100%);
   transition: transform 500ms;
+
   box-sizing: border-box;
   padding: 64px 120px;
   height: 100vh;
-  background: #e8eff9;
+  background: #e5e5e5;
 }
-menu:target {
-  transform: translateX(-0%);
+.menu:target {
+  transform: translateX(0%);
 }
 .menu-top {
   display: flex;
@@ -57,4 +68,33 @@ menu:target {
   color: #292929;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.main {
+  padding: 120px;
+}
+.recommended-title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.categories-title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.howtobuy-title {
+  padding: 120px 111px 308px 120px;
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -0.03em;
+  text-align: left;
 }
